@@ -1,14 +1,15 @@
+import os
 import whisper
+import imageio_ffmpeg as ffmpeg
 
-def transcribe_audio(audio_path):
-    # Load Whisper model (use "tiny", "base", "small", "medium", "large")
-    model = whisper.load_model("base")
-    result = model.transcribe(audio_path)
-    return result["text"]
+# Point Whisper to bundled ffmpeg
+os.environ["PATH"] = os.path.dirname(ffmpeg.get_ffmpeg_exe()) + os.pathsep + os.environ["PATH"]
 
+# Load model
+model = whisper.load_model("base")
 
 filename= "voices/sample/buried_confession.mp3"
-if __name__ == "__main__":
-    audio_file = filename  # replace with your audio file
-    text = transcribe_audio(audio_file)
-    print("📝 Transcription:", text)
+# Transcribe
+result = model.transcribe(filename)  # works with mp3, wav, m4a, etc.
+print("📝 Transcription:", result["text"])
+
