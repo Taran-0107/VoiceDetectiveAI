@@ -1,0 +1,8 @@
+openai-whisper
+pyAudioAnalysis
+librosa
+soundfile
+numpy
+scipy
+torch
+torchaudio
