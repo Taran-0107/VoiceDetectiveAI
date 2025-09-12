@@ -1,0 +1,15 @@
+clone the github repository
+paste this command in terminal where you want to install the repo:
+
+git clone https://github.com/Taran-0107/VoiceDetectiveAI.git
+
+navigate inside the folder, once inside
+
+install requirements:
+paste this command below on terminal:
+
+pip install -r requirements.txt
+
+run the main.py file:
+
+python main.py
