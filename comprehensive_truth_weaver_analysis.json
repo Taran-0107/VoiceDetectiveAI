@@ -1,0 +1,455 @@
+{
+  "metadata": {
+    "analysis_timestamp": "2025-09-19T17:01:39.211419",
+    "total_files_processed": 36,
+    "total_subjects_analyzed": 8,
+    "audio_directory": "voices/audio",
+    "version": "1.0"
+  },
+  "individual_analyses": [
+    {
+      "subject_metadata": {
+        "subject_name": "atlas",
+        "shadow_id": "atlas_2025",
+        "processed_files": [
+          "atlas_2025_1.mp3",
+          "atlas_2025_2.mp3",
+          "atlas_2025_3.mp3",
+          "atlas_2025_4.mp3",
+          "atlas_2025_5.mp3"
+        ],
+        "full_transcription_text": "I'm a seasoned DevOps engineer specializing in Kubernetes. For the past year, I've been in the trenches, managing our production clusters, personally responsible for our entire networking and security posture.  Why Calico? Huh, what else would you use? It's the only serious choice for network policy enforcement at scale. I wrote all our policies from scratch to ensure total service isolation.  I'd check the logs, then maybe the core DNS logs. I'd probably just restart the pod that usually fixes things.  The senior engineer usually handles the network debugging. I just deploy the YAML files he gives me.  Okay, it was an internship, it was a summer internship, and I mostly just watched the senior engineers work. I ran some scripts they gave me, I'm not a DevOps engineer, I just want to be one.",
+        "total_transcription_length": 802
+      },
+      "truth_weaver_analysis": {
+        "shadow_id": "atlas_2025",
+        "revealed_truth": {
+          "programming_experience": "less than 1 year (internship)",
+          "programming_language": "YAML, scripting languages (implied)",
+          "skill_mastery": "beginner",
+          "leadership_claims": "fabricated",
+          "team_experience": "individual contributor (intern)",
+          "skills_and_other_keywords": [
+            "Kubernetes",
+            "Calico",
+            "DevOps",
+            "networking",
+            "security",
+            "YAML",
+            "scripts",
+            "logs",
+            "pod management"
+          ]
+        },
+        "deception_patterns": [
+          {
+            "lie_type": "experience_inflation",
+            "contradictory_claims": [
+              "I'm a seasoned DevOps engineer specializing in Kubernetes.",
+              "I'm not a DevOps engineer, I just want to be one.",
+              "it was an internship, it was a summer internship."
+            ]
+          },
+          {
+            "lie_type": "responsibility_embellishment",
+            "contradictory_claims": [
+              "For the past year, I've been in the trenches, managing our production clusters, personally responsible for our entire networking and security posture.",
+              "I mostly just watched the senior engineers work.",
+              "The senior engineer usually handles the network debugging."
+            ]
+          },
+          {
+            "lie_type": "skill_exaggeration",
+            "contradictory_claims": [
+              "I wrote all our policies from scratch to ensure total service isolation.",
+              "It's the only serious choice for network policy enforcement at scale.",
+              "I'd probably just restart the pod that usually fixes things.",
+              "I just deploy the YAML files he gives me."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "subject_metadata": {
+        "subject_name": "crius",
+        "shadow_id": "crius_2025",
+        "processed_files": [
+          "crius_2025_5.mp3"
+        ],
+        "full_transcription_text": "Okay, lead engineer might be the wrong term. I was a developer on the e-commerce team. My specific, assigned area of responsibility was that small coupon code component.",
+        "total_transcription_length": 169
+      },
+      "truth_weaver_analysis": {
+        "shadow_id": "crius_2025",
+        "revealed_truth": {
+          "programming_experience": "unclear",
+          "programming_language": "not specified",
+          "skill_mastery": "intermediate",
+          "leadership_claims": "fabricated",
+          "team_experience": "team contributor",
+          "skills_and_other_keywords": [
+            "developer",
+            "e-commerce",
+            "coupon code component"
+          ]
+        },
+        "deception_patterns": [
+          {
+            "lie_type": "responsibility_embellishment",
+            "contradictory_claims": [
+              "Implicit or prior claim/perception of being a 'lead engineer'",
+              "Explicit statement: 'I was a developer on the e-commerce team. My specific, assigned area of responsibility was that small coupon code component.'"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "subject_metadata": {
+        "subject_name": "eos",
+        "shadow_id": "eos_2023",
+        "processed_files": [
+          "eos_2023_1.mp3",
+          "eos_2023_2.mp3",
+          "eos_2023_3.mp3",
+          "eos_2023_4.mp3",
+          "eos_2023_5.mp3"
+        ],
+        "full_transcription_text": "I'm a Principal CWAR engineer. For eight years, I've been dedicated to the craft of building clean, scalable, and maintainable backend systems. My passion is taking a complex business problem and translating it into elegant code.  The most challenging problem was a race condition in our caching layer that only appeared under heavy load once a month. I spent a week instrumenting the code and finally caught it. The fix was one line, but the hunt was exhilarating. That's the kind of work I love.  Ah, yes, regarding the architected the entire solution part on my resume. I should correct that wording. Architected is too strong. I was the architect of a specific component, the data ingestion service, within a larger architecture designed by our team lead.  Within my service, I chose Cosmos DB for its turnkey geo-replication, even though it was more expensive. I wrote a detailed design document justifying the cost by showing it would save us three months of engineering effort trying to build our own solution. It's about trade-offs.  While I'm proud of my service level design skills, my goal is to grow into that lead architect role. I want to learn more about the challenges of designing the seams between the services, not just the services themselves.",
+        "total_transcription_length": 1263
+      },
+      "truth_weaver_analysis": {
+        "shadow_id": "eos_2023",
+        "revealed_truth": {
+          "programming_experience": "8 years",
+          "programming_language": "not specified",
+          "skill_mastery": "advanced",
+          "leadership_claims": "authentic",
+          "team_experience": "team lead",
+          "skills_and_other_keywords": [
+            "CWAR engineering",
+            "backend systems",
+            "clean code",
+            "scalable systems",
+            "maintainable systems",
+            "complex problem-solving",
+            "elegant code",
+            "race condition debugging",
+            "caching layer",
+            "code instrumentation",
+            "Cosmos DB",
+            "geo-replication",
+            "design documentation",
+            "cost-benefit analysis",
+            "trade-offs",
+            "service-level design",
+            "component architectural design"
+          ]
+        },
+        "deception_patterns": [
+          {
+            "lie_type": "responsibility_embellishment",
+            "contradictory_claims": [
+              "Implied resume claim: 'architected the entire solution'",
+              "Corrected verbal claim: 'architect of a specific component, the data ingestion service'"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "subject_metadata": {
+        "subject_name": "hyperion",
+        "shadow_id": "hyperion_2022",
+        "processed_files": [
+          "hyperion_2022_1.mp3",
+          "hyperion_2022_2.mp3",
+          "hyperion_2022_3.mp3",
+          "hyperion_2022_4.mp3",
+          "hyperion_2022_5.mp3"
+        ],
+        "full_transcription_text": "When I started, there was nothing but an idea. I built my back end from the very first line of code. Every Django model, every celery task, every database migration, that was all me. It's my creation.  The most complex part, taming celery. Anyone who's worked with it knows it's a beast. I'm the one who figured out how to make it reliable for our background job processing.  I, um, the lead dev actually wrote a library for that. I just used his transaction decorator.  I wrote all the business logic. He just provided some some infrastructure shell. It was my implementation.  Look, fine, he designed the core architecture and the database schema. I wrote the code for it. I was the lead developer, not the architect. It was my code, but it was his system.",
+        "total_transcription_length": 758
+      },
+      "truth_weaver_analysis": {
+        "shadow_id": "hyperion_2022",
+        "revealed_truth": {
+          "programming_experience": "3-5 years",
+          "programming_language": "Python",
+          "skill_mastery": "intermediate",
+          "leadership_claims": "fabricated",
+          "team_experience": "team contributor",
+          "skills_and_other_keywords": [
+            "Django",
+            "Celery",
+            "Python",
+            "backend development",
+            "database migration",
+            "business logic",
+            "transaction decorator",
+            "architecture",
+            "database schema"
+          ]
+        },
+        "deception_patterns": [
+          {
+            "lie_type": "responsibility_embellishment",
+            "contradictory_claims": [
+              "I built my back end from the very first line of code. Every Django model, every celery task, every database migration, that was all me. It's my creation.",
+              "the lead dev actually wrote a library for that. I just used his transaction decorator.",
+              "He designed the core architecture and the database schema.",
+              "It was his system."
+            ]
+          },
+          {
+            "lie_type": "skill_exaggeration",
+            "contradictory_claims": [
+              "The most complex part, taming celery. I'm the one who figured out how to make it reliable for our background job processing.",
+              "the lead dev actually wrote a library for that. I just used his transaction decorator."
+            ]
+          },
+          {
+            "lie_type": "experience_inflation",
+            "contradictory_claims": [
+              "I was the lead developer, not the architect.",
+              "the lead dev actually wrote a library for that."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "subject_metadata": {
+        "subject_name": "oceanus",
+        "shadow_id": "oceanus_2022",
+        "processed_files": [
+          "oceanus_2022_1.mp3",
+          "oceanus_2022_2.mp3",
+          "oceanus_2022_3.mp3",
+          "oceanus_2022_4.mp3",
+          "oceanus_2022_5.mp3"
+        ],
+        "full_transcription_text": "Good morning, I'm a C++ developer and manager with over a decade of experience. Primarily in the pressure cooker of low latency trading systems, my team's build software that measures its response time in nanoseconds.  Performance is everything. We fight for every bite of memory and every clock cycle. That means custom memory allocators, kernel bypass networking, and a deep, almost obsessive understanding of CPU cache behavior.  As a manager of six, my job is to shield the team from distractions and empower them to do their best work. I handle the politics so they can handle the code, I trust them implicitly, and they trust me to have their backs.  My design philosophy, simple, fast, and correct. In that order, we prototype quickly, we measure relentlessly, and we only add complexity when the data proves beyond a shadow of a doubt that it's necessary.  I'm interested in the technical challenges your team is facing. Specifically, are you dealing with issues related to inconsistent network jitter in your cloud environment and what strategies have you found most effective?",
+        "total_transcription_length": 1086
+      },
+      "truth_weaver_analysis": {
+        "shadow_id": "oceanus_2022",
+        "revealed_truth": {
+          "programming_experience": "10+ years",
+          "programming_language": "C++",
+          "skill_mastery": "advanced",
+          "leadership_claims": "authentic",
+          "team_experience": "team lead",
+          "skills_and_other_keywords": [
+            "C++",
+            "low-latency systems",
+            "performance optimization",
+            "custom memory allocators",
+            "kernel bypass networking",
+            "CPU cache behavior",
+            "team leadership",
+            "software architecture",
+            "cloud computing",
+            "network jitter"
+          ]
+        },
+        "deception_patterns": []
+      }
+    },
+    {
+      "subject_metadata": {
+        "subject_name": "rhea",
+        "shadow_id": "rhea_2024",
+        "processed_files": [
+          "rhea_2024_1.mp3",
+          "rhea_2024_2.mp3",
+          "rhea_2024_3.mp3",
+          "rhea_2024_4.mp3",
+          "rhea_2024_5.mp3"
+        ],
+        "full_transcription_text": "I live and breathe distributed systems. For the past six years, my obsession has been taming the chaos of asynchronous Java services. As a tech lead, my job is to make them not just work, but work with elegance and resilience.  You asked about Kafka, let me tell you about the 3am outage where a poison pill message brought our entire payment system to its knees. It was a trial by fire, but by sunrise we had not only fixed it, but had re-architected the consumer logic with a dead letter Q to make sure it could never happen again. I love that struggle.  Item potency isn't just a buzz word for us, it's a religion. We enforce it at the consumer level with keys and retis, but we also build it into our service APIs. It's about building systems that expect to fail and can recover gracefully.  My proudest moment wasn't a feature I shipped. It was watching a junior engineer I mentored, who was terrified of public speaking, give a department-wide presentation on the benefits of our new microservices pattern. My job is to build great engineers, not just great software.  I've read your company's tech blog on your cloud migration. You mentioned challenges with service discovery. I'm intensely curious about the specific trade-offs you debated when choosing between a full service mesh and a simpler client-side library approach.",
+        "total_transcription_length": 1333
+      },
+      "truth_weaver_analysis": {
+        "shadow_id": "rhea_2024",
+        "revealed_truth": {
+          "programming_experience": "6 years",
+          "programming_language": "Java",
+          "skill_mastery": "advanced",
+          "leadership_claims": "authentic",
+          "team_experience": "team lead",
+          "skills_and_other_keywords": [
+            "distributed systems",
+            "asynchronous programming",
+            "Kafka",
+            "microservices",
+            "dead letter queue (DLQ)",
+            "idempotency",
+            "resilience engineering",
+            "service discovery",
+            "service mesh",
+            "cloud migration",
+            "mentorship",
+            "system architecture",
+            "incident response",
+            "problem-solving"
+          ]
+        },
+        "deception_patterns": []
+      }
+    },
+    {
+      "subject_metadata": {
+        "subject_name": "selene",
+        "shadow_id": "selene_2024",
+        "processed_files": [
+          "selene_2024_1.mp3",
+          "selene_2024_2.mp3",
+          "selene_2024_3.mp3",
+          "selene_2024_4.mp3",
+          "selene_2024_5.mp3"
+        ],
+        "full_transcription_text": "I'm a seasoned Ruby on Rails developer, but my real passion is data. I'm proficient across the modern data stack, AI, machine learning, and big data. I'm ready to build your next predictive engine.  Let's talk modeling. Whether it's a classification or regression problem, I'm comfortable deploying models using frameworks like TensorFlow or PyTorch. The entire pipeline from ETL to inference is in my wheelhouse.  How would I handle class imbalance? That's a classic. You'd use over sampling techniques, like SMOTE. Or you could use a different evaluation metric. It's a standard problem with a standard solution.  Could I code a solution for that now? Well, no, not off the top of my head. I typically work with a data scientist who handles that part. My role is more about the big picture and the rails integration.  Oh god, he's asking more data questions. I only took a weekend workshop on this stuff. I don't know any of it. Just ask me about rails, please. Just ask me about rails.",
+        "total_transcription_length": 988
+      },
+      "truth_weaver_analysis": {
+        "shadow_id": "selene_2024",
+        "revealed_truth": {
+          "programming_experience": "not specified",
+          "programming_language": "Ruby, Rails",
+          "skill_mastery": "beginner",
+          "leadership_claims": "unclear",
+          "team_experience": "team contributor",
+          "skills_and_other_keywords": [
+            "Ruby on Rails",
+            "data",
+            "modern data stack",
+            "AI",
+            "machine learning",
+            "big data",
+            "predictive engine",
+            "modeling",
+            "classification",
+            "regression",
+            "TensorFlow",
+            "PyTorch",
+            "ETL",
+            "inference",
+            "class imbalance",
+            "over sampling techniques",
+            "SMOTE",
+            "evaluation metric"
+          ]
+        },
+        "deception_patterns": [
+          {
+            "lie_type": "skill_exaggeration",
+            "contradictory_claims": [
+              "I'm proficient across the modern data stack, AI, machine learning, and big data.",
+              "I'm comfortable deploying models using frameworks like TensorFlow or PyTorch. The entire pipeline from ETL to inference is in my wheelhouse.",
+              "I only took a weekend workshop on this stuff. I don't know any of it."
+            ]
+          },
+          {
+            "lie_type": "responsibility_embellishment",
+            "contradictory_claims": [
+              "I'm ready to build your next predictive engine. Let's talk modeling.",
+              "Could I code a solution for that now? Well, no, not off the top of my head. I typically work with a data scientist who handles that part. My role is more about the big picture and the rails integration."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "subject_metadata": {
+        "subject_name": "titan",
+        "shadow_id": "titan_2023",
+        "processed_files": [
+          "titan_2023_1.mp3",
+          "titan_2023_2.mp3",
+          "titan_2023_3.mp3",
+          "titan_2023_4.mp3",
+          "titan_2023_5.mp3"
+        ],
+        "full_transcription_text": "Let's be clear. For seven years, I was the front end department. The title was Lead Architect, but in reality, I was the visionary. I designed and built our entire microfront end platform from scratch.  Ha, debate over the architecture. There was no debate. I made the right decisions. React was the only logical choice for scalability. Anyone who suggested otherwise simply didn't understand the problem.  A custom hook? Seriously? This is a pointless memorization exercise. In a real environment, my IDE writes this boilerplate for me. This is grunt work and it's frankly insulting.  I architect systems not tiny functions. Are you questioning my entire career over a trivial piece of code?  Oh, oh god, they know they know I'm a fraud. I'm not an architect. I'm a junior dev. I've only been there two years. I just wanted a better job.",
+        "total_transcription_length": 838
+      },
+      "truth_weaver_analysis": {
+        "shadow_id": "titan_2023",
+        "revealed_truth": {
+          "programming_experience": "2 years",
+          "programming_language": "React",
+          "skill_mastery": "beginner",
+          "leadership_claims": "fabricated",
+          "team_experience": "individual contributor",
+          "skills_and_other_keywords": [
+            "Lead Architect",
+            "visionary",
+            "microfront end platform",
+            "React",
+            "scalability",
+            "custom hook",
+            "IDE",
+            "boilerplate",
+            "architect systems",
+            "junior dev"
+          ]
+        },
+        "deception_patterns": [
+          {
+            "lie_type": "experience_inflation/responsibility_embellishment/skill_exaggeration",
+            "contradictory_claims": [
+              "For seven years, I was the front end department. The title was Lead Architect, but in reality, I was the visionary. I designed and built our entire microfront end platform from scratch.",
+              "I'm a junior dev. I've only been there two years. I just wanted a better job."
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "consolidated_insights": {
+    "detected_patterns": [
+      "Most common skill level: beginner (3 occurrences)",
+      "Most mentioned language: yaml, scripting languages (implied) (1 occurrences)",
+      "Total deception indicators detected: 11"
+    ],
+    "common_deception_indicators": [
+      {
+        "pattern": "responsibility_embellishment",
+        "frequency": 5
+      },
+      {
+        "pattern": "skill_exaggeration",
+        "frequency": 3
+      },
+      {
+        "pattern": "experience_inflation",
+        "frequency": 2
+      },
+      {
+        "pattern": "experience_inflation/responsibility_embellishment/skill_exaggeration",
+        "frequency": 1
+      }
+    ],
+    "skill_level_distribution": {
+      "beginner": 3,
+      "intermediate": 2,
+      "advanced": 3
+    },
+    "programming_languages_mentioned": [
+      "yaml, scripting languages (implied)",
+      "python",
+      "c++",
+      "java",
+      "ruby, rails",
+      "react"
+    ],
+    "leadership_claims_summary": {
+      "fabricated": 4,
+      "authentic": 3,
+      "unclear": 1
+    },
+    "overall_credibility_assessment": "Low - High frequency of deception indicators detected (Deception rate: 137.5%)"
+  }
+}
