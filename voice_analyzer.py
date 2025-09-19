@@ -21,7 +21,7 @@ class VoiceAnalyzer:
         Analyze transcribed audio text and return structured analysis
         
         Args:
-            transcription_text (str): The transcribed audio text
+            transcription_text (str): The transcribed audio text from all sessions
             shadow_id (str): Unique identifier for this analysis
             
         Returns:
@@ -29,67 +29,62 @@ class VoiceAnalyzer:
         """
         
         prompt = f"""
-        You are "Truth Weaver", an advanced AI system that analyzes speech patterns and content to detect potential deception, skill level assessment, and credibility indicators.
+        You are "Truth Weaver," an AI Detective specializing in the "Whispering Shadows" case. Your mission is to analyze testimonies and weave together the most likely truth from conflicting accounts.
 
-        Analyze the following transcribed audio and provide a detailed analysis in the exact JSON format specified below.
+        **CASE CONTEXT:**
+        The subject is a "Whispering Shadow" who has undergone five "truth sessions." Their testimony progresses from confident lies in early sessions to desperate admissions and emotional breakdowns in later ones. Your task is to see through the deception and synthesize the actual truth. Do not just report the last thing said; analyze the entire progression.
 
-        TRANSCRIBED TEXT:
+        **INSTRUCTIONS:**
+        1.  **Synthesize, Don't Just Extract:** Determine the most plausible truth based on all statements. For example, if a subject claims "6 years experience" then later admits "it was an internship," the revealed truth is beginner-level, not 6 years.
+        2.  **Infer Details:** Use context to infer information. If a subject mentions specific frameworks like Django or technologies like Kubernetes, list them. If their description of a senior role matches that of a junior, reflect this in the skill mastery assessment.
+        3.  **Identify Contradictions:** Pinpoint direct contradictions between claims made across the sessions. These are the key to uncovering deception patterns.
+
+        **TRANSCRIBED TEXT (ALL SESSIONS):**
         "{transcription_text}"
 
-        Please analyze this text for:
-        1. Programming experience level (beginner/intermediate/advanced)
-        2. Programming languages mentioned or implied
-        3. Skill mastery assessment
-        4. Leadership claims and their authenticity
-        5. Team experience (individual vs team contributor vs leadership)
-        6. Any contradictions or inconsistencies
-        7. Deception patterns or credibility concerns
+        **REQUIRED JSON OUTPUT FORMAT:**
+        Provide your final analysis in this EXACT JSON structure. Populate each field based on your synthesized findings.
 
-        Return your analysis in this EXACT JSON format:
         {{
             "shadow_id": "{shadow_id}",
             "revealed_truth": {{
-                "programming_experience": "X-Y years",
-                "programming_language": "language_name",
-                "skill_mastery": "beginner/intermediate/advanced",
-                "leadership_claims": "authentic/fabricated/unclear",
-                "team_experience": "individual contributor/team lead/senior leadership",
-                "skills_and_other_keywords": ["keyword1", "keyword2", "keyword3"]
+                "programming_experience": "Synthesize the most likely experience range (e.g., '1-2 years', 'less than 1 year').",
+                "programming_language": "List the primary language, infer if necessary (e.g., 'Python' if Django is mentioned). Use 'not specified' if truly unknown.",
+                "skill_mastery": "Assess the true mastery ('beginner', 'intermediate', 'advanced') based on the evidence, not just their claims.",
+                "leadership_claims": "Label as 'authentic', 'exaggerated', 'fabricated', or 'unclear'.",
+                "team_experience": "Determine their actual role ('individual contributor', 'team member', 'team lead').",
+                "skills_and_other_keywords": ["List specific technologies, skills, or important keywords mentioned."]
             }},
             "deception_patterns": [
                 {{
-                    "lie_type": "experience_inflation/responsibility_embellishment/skill_exaggeration/other",
-                    "contradictory_claims": ["claim1", "claim2"]
+                    "lie_type": "Choose from 'experience_inflation', 'responsibility_embellishment', 'skill_exaggeration', 'fabricated'.",
+                    "contradictory_claims": ["Provide a list of direct quotes that contradict each other."]
                 }}
             ]
         }}
-
-        Base your analysis strictly on the content provided. If information is not clearly stated, use "not specified" or "unclear". Be objective and factual in your assessment.
         """
         
         try:
             response = self.model.generate_content(prompt)
             response_text = response.text.strip()
             
-            # Extract JSON from response
             if '```json' in response_text:
                 json_start = response_text.find('```json') + 7
-                json_end = response_text.find('```', json_start)
+                json_end = response_text.rfind('```')
                 json_text = response_text[json_start:json_end].strip()
-            elif '{' in response_text and '}' in response_text:
+            elif '{' in response_text:
                 json_start = response_text.find('{')
                 json_end = response_text.rfind('}') + 1
                 json_text = response_text[json_start:json_end]
             else:
-                json_text = response_text
-            
-            # Parse JSON
+                raise json.JSONDecodeError("No JSON object found in response", response_text, 0)
+
             analysis = json.loads(json_text)
             return analysis
             
         except json.JSONDecodeError as e:
             print(f"❌ JSON parsing error: {e}")
-            print(f"Raw response: {response_text}")
+            print(f"Raw response received: {response_text}")
             return self._get_fallback_analysis(shadow_id, transcription_text)
         
         except Exception as e:
@@ -114,6 +109,7 @@ class VoiceAnalyzer:
             try:
                 with open(output_file, 'w', encoding='utf-8') as f:
                     json.dump(analysis, f, indent=2, ensure_ascii=False)
+                # MODIFICATION: Corrected the undefined variable 'file_path' to 'output_file'
                 return analysis, output_file
             except Exception as e:
                 print(f"❌ Error saving analysis: {e}")
@@ -125,24 +121,11 @@ class VoiceAnalyzer:
         """Provide a basic fallback analysis structure"""
         return {
             "shadow_id": shadow_id,
-            "revealed_truth": {
-                "programming_experience": "analysis_failed",
-                "programming_language": "not analyzed",
-                "skill_mastery": "unknown",
-                "leadership_claims": "not analyzed",
-                "team_experience": "not analyzed",
-                "skills_and_other_keywords": ["analysis_error"]
-            },
-            "deception_patterns": [
-                {
-                    "lie_type": "analysis_unavailable",
-                    "contradictory_claims": ["Could not analyze due to technical error"]
-                }
-            ]
+            "revealed_truth": { "error": "Analysis failed due to a technical error." },
+            "deception_patterns": []
         }
 
 if __name__ == "__main__":
-    # Example usage
     analyzer = VoiceAnalyzer()
     
     sample_text = """Funny thing, when I was seven, I made a boat out of mismatched toys and it sort of held together. 

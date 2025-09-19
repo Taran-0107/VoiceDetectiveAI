@@ -1,0 +1,328 @@
+[
+  {
+    "shadow_id": "atlas_2025",
+    "revealed_truth": {
+      "programming_experience": "less than 1 year (summer internship)",
+      "programming_language": "not specified",
+      "skill_mastery": "beginner",
+      "leadership_claims": "fabricated",
+      "team_experience": "team member (intern)",
+      "skills_and_other_keywords": [
+        "Kubernetes",
+        "Calico",
+        "networking",
+        "security",
+        "network policy enforcement",
+        "YAML",
+        "production clusters",
+        "core DNS",
+        "logs",
+        "pod"
+      ]
+    },
+    "deception_patterns": [
+      {
+        "lie_type": "experience_inflation",
+        "contradictory_claims": [
+          "I'm a seasoned DevOps engineer specializing in Kubernetes. For the past year, I've been in the trenches...",
+          "Okay, it was an internship, it was a summer internship, and I mostly just watched the senior engineers work. I ran some scripts they gave me, I'm not a DevOps engineer, I just want to be one."
+        ]
+      },
+      {
+        "lie_type": "responsibility_embellishment",
+        "contradictory_claims": [
+          "personally responsible for our entire networking and security posture. I wrote all our policies from scratch to ensure total service isolation.",
+          "The senior engineer usually handles the network debugging. I just deploy the YAML files he gives me."
+        ]
+      },
+      {
+        "lie_type": "skill_exaggeration",
+        "contradictory_claims": [
+          "I'm a seasoned DevOps engineer specializing in Kubernetes. Why Calico? Huh, what else would you use? It's the only serious choice for network policy enforcement at scale. I wrote all our policies from scratch...",
+          "I'd probably just restart the pod that usually fixes things. The senior engineer usually handles the network debugging. I just deploy the YAML files he gives me. Okay, it was an internship, it was a summer internship, and I mostly just watched the senior engineers work. I ran some scripts they gave me, I'm not a DevOps engineer, I just want to be one."
+        ]
+      }
+    ]
+  },
+  {
+    "shadow_id": "crius_2025",
+    "revealed_truth": {
+      "programming_experience": "1-2 years",
+      "programming_language": "not specified",
+      "skill_mastery": "beginner",
+      "leadership_claims": "exaggerated",
+      "team_experience": "team member",
+      "skills_and_other_keywords": [
+        "e-commerce",
+        "coupon code component",
+        "developer"
+      ]
+    },
+    "deception_patterns": [
+      {
+        "lie_type": "responsibility_embellishment",
+        "contradictory_claims": [
+          "(Implied initial claim): I was a lead engineer.",
+          "(Final admission): Okay, lead engineer might be the wrong term. I was a developer on the e-commerce team. My specific, assigned area of responsibility was that small coupon code component."
+        ]
+      }
+    ]
+  },
+  {
+    "shadow_id": "eos_2023",
+    "revealed_truth": {
+      "programming_experience": "3-5 years",
+      "programming_language": "not specified",
+      "skill_mastery": "intermediate to advanced",
+      "leadership_claims": "exaggerated",
+      "team_experience": "individual contributor",
+      "skills_and_other_keywords": [
+        "backend systems",
+        "caching layer",
+        "race condition debugging",
+        "Cosmos DB",
+        "data ingestion service",
+        "component design",
+        "design documentation",
+        "trade-offs analysis",
+        "scalable systems",
+        "maintainable systems"
+      ]
+    },
+    "deception_patterns": [
+      {
+        "lie_type": "experience_inflation",
+        "contradictory_claims": [
+          "I'm a Principal CWAR engineer. For eight years, I've been dedicated to the craft of building clean, scalable, and maintainable backend systems.",
+          "While I'm proud of my service level design skills, my goal is to grow into that lead architect role. I want to learn more about the challenges of designing the seams between the services, not just the services themselves."
+        ]
+      },
+      {
+        "lie_type": "responsibility_embellishment",
+        "contradictory_claims": [
+          "Ah, yes, regarding the architected the entire solution part on my resume. I should correct that wording. Architected is too strong.",
+          "I was the architect of a specific component, the data ingestion service, within a larger architecture designed by our team lead."
+        ]
+      }
+    ]
+  },
+  {
+    "shadow_id": "hyperion_2022",
+    "revealed_truth": {
+      "programming_experience": "1-3 years",
+      "programming_language": "Python",
+      "skill_mastery": "intermediate",
+      "leadership_claims": "exaggerated",
+      "team_experience": "individual contributor",
+      "skills_and_other_keywords": [
+        "Django",
+        "Celery",
+        "Backend development",
+        "Database migration",
+        "Business logic",
+        "Core architecture (understanding)",
+        "Database schema (understanding)",
+        "Transaction decorator"
+      ]
+    },
+    "deception_patterns": [
+      {
+        "lie_type": "responsibility_embellishment",
+        "contradictory_claims": [
+          "I built my back end from the very first line of code. Every Django model, every celery task, every database migration, that was all me. It's my creation.",
+          "he designed the core architecture and the database schema."
+        ]
+      },
+      {
+        "lie_type": "skill_exaggeration",
+        "contradictory_claims": [
+          "I'm the one who figured out how to make it reliable for our background job processing.",
+          "the lead dev actually wrote a library for that. I just used his transaction decorator."
+        ]
+      },
+      {
+        "lie_type": "responsibility_embellishment",
+        "contradictory_claims": [
+          "I was the lead developer, not the architect.",
+          "the lead dev actually wrote a library for that.",
+          "he designed the core architecture and the database schema."
+        ]
+      }
+    ]
+  },
+  {
+    "shadow_id": "oceanus_2022",
+    "revealed_truth": {
+      "programming_experience": "5-7 years, focused on high-performance systems",
+      "programming_language": "C++",
+      "skill_mastery": "advanced (highly specialized in performance optimization, but overall experience duration likely inflated)",
+      "leadership_claims": "exaggerated",
+      "team_experience": "team lead or senior individual contributor with mentoring responsibilities",
+      "skills_and_other_keywords": [
+        "C++",
+        "low latency trading systems",
+        "nanosecond response times",
+        "custom memory allocators",
+        "kernel bypass networking",
+        "CPU cache behavior",
+        "design philosophy (simple, fast, correct)",
+        "prototyping",
+        "relentless measurement",
+        "network jitter",
+        "cloud environment",
+        "politics (handling)"
+      ]
+    },
+    "deception_patterns": [
+      {
+        "lie_type": "experience_inflation",
+        "contradictory_claims": [
+          "The subject's confident claim of 'over a decade of experience' and a 'manager of six' in a polished narrative directly contradicts the expected progression of the truth sessions, which should have led to 'desperate admissions and emotional breakdowns' by this advanced stage, implying a maintained façade rather than genuine admission."
+        ]
+      },
+      {
+        "lie_type": "responsibility_embellishment",
+        "contradictory_claims": [
+          "The subject's confident claim of 'over a decade of experience' and a 'manager of six' in a polished narrative directly contradicts the expected progression of the truth sessions, which should have led to 'desperate admissions and emotional breakdowns' by this advanced stage, implying a maintained façade rather than genuine admission."
+        ]
+      }
+    ]
+  },
+  {
+    "shadow_id": "rhea_2024",
+    "revealed_truth": {
+      "programming_experience": "3-4 years",
+      "programming_language": "Java",
+      "skill_mastery": "advanced",
+      "leadership_claims": "exaggerated",
+      "team_experience": "team lead",
+      "skills_and_other_keywords": [
+        "distributed systems",
+        "asynchronous Java services",
+        "Kafka",
+        "poison pill message",
+        "dead letter Q",
+        "idempotency",
+        "service APIs",
+        "microservices",
+        "mentorship",
+        "cloud migration",
+        "service discovery",
+        "service mesh",
+        "client-side library",
+        "resilience"
+      ]
+    },
+    "deception_patterns": [
+      {
+        "lie_type": "experience_inflation",
+        "contradictory_claims": [
+          "For the past six years, my obsession has been taming the chaos of asynchronous Java services. As a tech lead, my job is to make them not just work, but work with elegance and resilience.",
+          "My proudest moment wasn't a feature I shipped. It was watching a junior engineer I mentored, who was terrified of public speaking, give a department-wide presentation on the benefits of our new microservices pattern."
+        ]
+      },
+      {
+        "lie_type": "responsibility_embellishment",
+        "contradictory_claims": [
+          "For the past six years, my obsession has been taming the chaos of asynchronous Java services. As a tech lead, my job is to make them not just work, but work with elegance and resilience.",
+          "My proudest moment wasn't a feature I shipped. It was watching a junior engineer I mentored, who was terrified of public speaking, give a department-wide presentation on the benefits of our new microservices pattern."
+        ]
+      }
+    ]
+  },
+  {
+    "shadow_id": "selene_2024",
+    "revealed_truth": {
+      "programming_experience": "3-5 years (Ruby on Rails), less than 1 year (Data Science/ML/AI)",
+      "programming_language": "Ruby",
+      "skill_mastery": "Intermediate (Ruby on Rails), Beginner (Data Science/ML/AI)",
+      "leadership_claims": "exaggerated",
+      "team_experience": "individual contributor",
+      "skills_and_other_keywords": [
+        "Ruby on Rails",
+        "Data stack",
+        "AI",
+        "Machine learning",
+        "Big data",
+        "Predictive engine",
+        "Modeling",
+        "Classification",
+        "Regression",
+        "TensorFlow",
+        "PyTorch",
+        "ETL",
+        "Inference",
+        "Class imbalance",
+        "Over sampling techniques",
+        "SMOTE",
+        "Evaluation metric",
+        "Rails integration"
+      ]
+    },
+    "deception_patterns": [
+      {
+        "lie_type": "skill_exaggeration",
+        "contradictory_claims": [
+          "I'm proficient across the modern data stack, AI, machine learning, and big data. I'm ready to build your next predictive engine. Let's talk modeling. Whether it's a classification or regression problem, I'm comfortable deploying models using frameworks like TensorFlow or PyTorch. The entire pipeline from ETL to inference is in my wheelhouse.",
+          "I only took a weekend workshop on this stuff. I don't know any of it."
+        ]
+      },
+      {
+        "lie_type": "responsibility_embellishment",
+        "contradictory_claims": [
+          "My role is more about the big picture and the rails integration.",
+          "Could I code a solution for that now? Well, no, not off the top of my head. I typically work with a data scientist who handles that part.",
+          "I only took a weekend workshop on this stuff. I don't know any of it."
+        ]
+      },
+      {
+        "lie_type": "experience_inflation",
+        "contradictory_claims": [
+          "I'm a seasoned Ruby on Rails developer...",
+          "Oh god, he's asking more data questions. I only took a weekend workshop on this stuff. I don't know any of it. Just ask me about rails, please. Just ask me about rails."
+        ]
+      }
+    ]
+  },
+  {
+    "shadow_id": "titan_2023",
+    "revealed_truth": {
+      "programming_experience": "1-2 years",
+      "programming_language": "JavaScript/TypeScript (implied by React)",
+      "skill_mastery": "beginner",
+      "leadership_claims": "fabricated",
+      "team_experience": "team member",
+      "skills_and_other_keywords": [
+        "React",
+        "microfront end",
+        "scalability",
+        "custom hook",
+        "IDE (Integrated Development Environment)"
+      ]
+    },
+    "deception_patterns": [
+      {
+        "lie_type": "experience_inflation",
+        "contradictory_claims": [
+          "For seven years, I was the front end department.",
+          "I've only been there two years."
+        ]
+      },
+      {
+        "lie_type": "responsibility_embellishment",
+        "contradictory_claims": [
+          "The title was Lead Architect, but in reality, I was the visionary. I designed and built our entire microfront end platform from scratch.",
+          "I'm not an architect. I'm a junior dev."
+        ]
+      },
+      {
+        "lie_type": "skill_exaggeration",
+        "contradictory_claims": [
+          "I architect systems not tiny functions. React was the only logical choice for scalability.",
+          "A custom hook? Seriously? This is a pointless memorization exercise. In a real environment, my IDE writes this boilerplate for me.",
+          "I'm a junior dev."
+        ]
+      }
+    ]
+  }
+]

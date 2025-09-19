@@ -1,29 +1,25 @@
 {
   "shadow_id": "phoenix_2024",
   "revealed_truth": {
-    "programming_experience": "3-6 years",
+    "programming_experience": "1-3 years",
     "programming_language": "not specified",
-    "skill_mastery": "intermediate",
+    "skill_mastery": "beginner",
     "leadership_claims": "exaggerated",
-    "team_experience": "team member",
+    "team_experience": "individual contributor",
     "skills_and_other_keywords": [
-      "building",
       "quick fixes",
       "duct tape elegance",
-      "ownership of systems",
-      "built parts of things",
-      "stitched services together",
-      "owned a small feature",
+      "stitching services",
       "commit history",
-      "integration"
+      "feature ownership"
     ]
   },
   "deception_patterns": [
     {
       "lie_type": "responsibility_embellishment",
       "contradictory_claims": [
-        "Claim: 'I say I built parts of things, stitched services together, and occasionally owned a small feature.'",
-        "Admission of embellishment: 'Sometimes I talk about entire projects, because it's simpler to tell a story than to read the commit history.'"
+        "when people ask about ownership of systems, I say I built parts of things, stitched services together, and occasionally owned a small feature.",
+        "Sometimes I talk about entire projects, because it's simpler to tell a story than to read the commit history. It gets messy."
       ]
     }
   ]
